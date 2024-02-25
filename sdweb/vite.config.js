@@ -8,7 +8,8 @@ export default defineConfig({
     host: '0.0.0.0'
   },
   build: {
-    outDir: '../sdweb-server/static'
+    outDir: '../sdweb-server/static',
+    target: 'esnext',
   },
   minify: {
     terserOptions: {
