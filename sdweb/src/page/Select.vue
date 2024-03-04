@@ -7,6 +7,8 @@ import Login from '../page/Login.vue'
     <div>
         <el-row>
             <el-col :span="8">
+              <p v-if="userid != '' && userid != null">登录账号: {{ userid }} <el-button type="danger"
+                        @click="logout">退出</el-button></p>
                 <el-card class="mode-card card-hover" @click="gotoCreateMode" :class="{ 'card-grey': gotoCreateModeClick }">
                     <div class="mode-title">创造模式</div>
                     <div class="mode-desc">自己创造想要的图像（建议PC端使用）</div>
@@ -17,18 +19,11 @@ import Login from '../page/Login.vue'
                 </el-card>
                 当前服务器状态：<el-tag :type='isOnline ? "success" : "error"'> {{ isOnlineMsg }} </el-tag>{{ isOnline ?
                     '尽情进行你的创作' : '浏览你的历史创作' }}
-
-                <p>本站系统已在github开源</p>
-                <p>当前平台共创作{{ allImageCount }}张杰作，期待你的创作及与大家分享</p>
-                <p>AI绘画算力平台</p>
-                <p v-if="userid != '' && userid != null">当前登录账号{{ userid }} <el-button type="danger"
-                        @click="logout">退出</el-button></p>
             </el-col>
             <el-col :span="2">
                 <div class="bgimg"></div>
             </el-col>
         </el-row>
-
     </div>
 </template >
 
