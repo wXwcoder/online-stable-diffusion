@@ -16,7 +16,7 @@ import Go from './Go.vue'
     <el-header class="header">
       <!-- 头部内容 -->
       <div class="logo-1">
-        ai painting
+        AI绘图
       </div>
     </el-header>
     <el-aside class="aside">
@@ -47,11 +47,6 @@ import Go from './Go.vue'
             :format="processTabFormat" color="#e6a23c" />
         </el-col>
         <el-col :span="3" class="versioninfo">
-          <!-- 在您不修改、移除以下内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用，有问题请在QQ群：793072950咨询 Begin-->
-          <p class="space1">Power By ai8</p>
-          <p class="space1"><a href="https://github.com/newlxj/stablediffusion-website-online" target="_blank">github</a> </p>
-          <p class="space1"><a href="https://gitee.com/aliu/sdweb-multi-user-website" target="_blank">gitee</a> </p>
-          <!-- 在您不修改、移除以上内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用 End-->
         </el-col>
       </el-row>
     </el-footer>

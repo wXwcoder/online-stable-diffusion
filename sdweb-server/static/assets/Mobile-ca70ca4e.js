@@ -1,0 +1,1 @@
+import{_ as a,A as _,D as o}from"./DialogShowImage-9bbe4c8a.js";import{_ as s,o as t,b as c,a as e,F as n}from"./index-83b16cf2.js";const r={__name:"Mobile",setup(l){return(m,p)=>(t(),c(n,null,[e(a),e(_),e(o)],64))}},d=s(r,[["__scopeId","data-v-abff5ad3"]]);export{d as default};
