@@ -25,10 +25,10 @@ const myFetch = {
                 if (response.ok) {
                     return response.text()
                 }else  if(response.status == 401) {
-                    //Cookies.remove("token")
-                    //localStorage.removeItem('userid')
-                    //this.$message.error('登录超时，请重新登录.');
-                    //this.$bus1.emit('login_user',{loginshow:true} );
+                    Cookies.remove("token")
+                    localStorage.removeItem('userid')
+                    this.$message.error('登录超时，请重新登录.');
+                    this.$bus1.emit('login_user',{loginshow:true} );
                     // this.$router.push('/')
                 }
             })
